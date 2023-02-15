@@ -14,7 +14,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -26,19 +26,18 @@ body {
 .list {
   list-style: none;
 }
-
-/*
-посилання */
+/* посилання */
 .link {
   text-decoration: none;
 }
 
-/* logo */
-.one {
+/* HEADER */
+
+.logo-one {
   color: #4d5ae5;
 }
 
-.two {
+.logo-two {
   color: #2e2f42;
 }
 
@@ -47,74 +46,71 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
 }
 
-/* navigation */
-.site-nav .link {
-  font-style: normal;
+.header-navigation .link {
   font-weight: 500;
   color: #2e2f42;
 }
 
-.contact .link:hover,
-.contact .link:focus {
+.header-contact .link:hover,
+.header-contact .link:focus {
   color: #4d5ae5;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-navigation .link:hover,
+.header-navigation .link:focus {
   color: #4d5ae5;
 }
 
-/* contact */
-.contact .mail-phone {
-  font-style: normal;
+.header-tel,
+.header-mail {
   font-weight: 400;
   color: #434455;
 }
 
-/*
-hero */
+/* HERO */
+
 .hero {
   background-color: #2e2f42;
 }
 
-.hero .title {
-  font-style: normal;
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
-.hero .btn {
+.hero-btn {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
 }
 
-.hero .btn:hover,
-.hero .btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #404bbf;
 }
 
-/* section-1 */
+/* SECTION-1 */
 .list-item .title {
   font-size: 20px;
   line-height: 0.83;
+  letter-spacing: 0.02em;
 }
 
 .list-item .text {
@@ -122,24 +118,24 @@ hero */
   color: #434455;
 }
 
-/* section-2 */
+/* SECTION-2 */
 .section-2 .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
-/* section-3 */
+/* SECTION-3 */
 .section-3 {
   background-color: #f4f4fd;
 }
 
 .card-img-item .title {
-  font-style: normal;
   font-size: 20px;
   line-height: 0.83;
+  letter-spacing: 0.02em;
 }
 
 .card-img-item .text {
@@ -147,14 +143,14 @@ hero */
   color: #434455;
 }
 
-/* footer */
+/* FOOTER */
+
 .footer {
   background-color: #2e2f42;
 }
 
 .footer-logo .one {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
@@ -164,8 +160,7 @@ hero */
 }
 
 .footer-logo .two {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
@@ -184,7 +179,7 @@ hero */
 
 /* Portfolio */
 /* Page 2 */
-/* section-4 */
+/* SECTION-4 */
 .list-item .btn {
   background: #f4f4fd;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -208,10 +203,10 @@ hero */
 }
 
 .card-project-item .title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .card-project-item .text {
