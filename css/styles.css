@@ -11,7 +11,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+:root {
+  --primary-text-color: #2e2f42;
+  --title-text-color: #ffffff;
+  --accent-color: #4d5ae5;
+  --accent-color-2: #404bbf;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -19,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 /* списки */
@@ -34,7 +39,7 @@ body {
 /* HEADER */
 
 .logo-one {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .logo-two {
@@ -59,12 +64,12 @@ body {
 
 .header-contact .link:hover,
 .header-contact .link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-navigation .link:hover,
 .header-navigation .link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-tel,
@@ -84,11 +89,11 @@ body {
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--title-text-color);
 }
 
 .hero-btn {
-  background: #4d5ae5;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
@@ -103,7 +108,7 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #404bbf;
+  background:var(--accent-color-2);
 }
 
 /* SECTION-1 */
@@ -156,7 +161,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .footer-logo .two {
@@ -191,14 +196,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--accent-color);
   cursor: pointer;
 }
 
 .list-item .btn:hover,
 .list-item .btn:focus {
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
+  background-color: var(--accent-color-2);
+  border: 1px solid var(--accent-color-2);
   color: #ffffff;
 }
 
