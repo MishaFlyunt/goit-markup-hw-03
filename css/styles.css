@@ -78,7 +78,12 @@ body {
   color: var(--description-tel-mail-color);
 }
 .header-contact .link:hover,
-.header-contact .link:focus {
+.header-contact .link:focus,
+.header-link.link:hover,
+.header-link.link:focus {
+  color: var(--accent-color);
+}
+.header-link.current {
   color: var(--accent-color);
 }
 
