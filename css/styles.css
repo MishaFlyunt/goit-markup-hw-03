@@ -6,6 +6,14 @@
   --accent-color-2: #404bbf;
   --secondaty-font: 'Raleway', sans-serif;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
