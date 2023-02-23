@@ -8,6 +8,21 @@
   --accent-color-2: #404bbf;
   --secondaty-font: 'Raleway', sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
 body {
   background-color: var(--title-text-bg-color);
   font-family: 'Roboto', sans-serif;
@@ -32,37 +47,27 @@ body {
 
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .link {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .container {
   width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.img.no-gap{
-  display: block;
-
-  /* max-width: 100%; */
-  height: auto;
-}
 
 /* ---------HEADER----------- */
 
 .header {
+  padding: 24px 0;
 }
 .header-navigation {
 }
@@ -111,7 +116,6 @@ p {
   color: var(--accent-color);
 }
 
-
 /* -----------HERO-------------- */
 
 .hero {
@@ -159,6 +163,7 @@ p {
 .about-list {
 }
 .about-item {
+  width: 264px;
 }
 .about-title {
   margin-bottom: 8px;
@@ -168,7 +173,7 @@ p {
   letter-spacing: 0.02em;
 }
 .about-description {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 
   font-weight: 400;
   color: var(--description-tel-mail-color);
@@ -221,7 +226,7 @@ p {
 .team-list {
 }
 
-.team-item .container {
+.team-item {
   width: 264px;
 
   background: var(--title-text-bg-color);
@@ -230,9 +235,11 @@ p {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 32px;
 }
+.team-item img {
+  margin-bottom: 32px;
+}
 
 .team-subtitle {
-  margin-top: 32px;
   margin-bottom: 8px;
   text-align: center;
 
@@ -255,10 +262,9 @@ p {
 
   background-color: var(--primary-text-bg-color);
 }
-.footer .container{
+.footer .container {
   width: 264px;
 }
-
 
 .footer-logo .one {
   font-family: var(--secondaty-font);
@@ -327,34 +333,29 @@ p {
   border: 1px solid var(--accent-color-2);
   color: var(--title-text-bg-color);
 }
-.list-item {
-}
 .benefits-list {
 }
-.benefits-item .container {
-  margin-bottom: 48px;
 
-  border-bottom: 1px solid var(--primary-border-color);
+.benefits-item .text{
+  width: 360px;
+  padding: 32px 32px;
+  border-left: 1px solid var(--primary-border-color) ;
   border-right: 1px solid var(--primary-border-color);
-  border-left: 1px solid var(--primary-border-color);
-
-  width: 361px;
+  border-bottom: 1px solid var(--primary-border-color);
 }
+
 .benefits-subtitle {
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
+  padding-left: 16px;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
-  
 }
 .benefits-description {
-  margin-bottom: 32px;
-  margin-left: 16px;
+  /* padding-bottom: 32px; */
+  padding-left: 16px;
 
   font-weight: 400;
   color: var(--description-tel-mail-color);
