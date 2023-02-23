@@ -26,7 +26,7 @@ img {
 body {
   background-color: var(--title-text-bg-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -57,7 +57,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .section {
   padding-top: 120px;
@@ -67,11 +67,20 @@ body {
 /* ---------HEADER----------- */
 
 .header {
-  padding: 24px 0;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 .header-navigation {
+  display: flex;
 }
 .heder-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: var(--secondaty-font);
   font-weight: 800;
   font-size: 18px;
@@ -90,22 +99,38 @@ body {
 }
 
 .header-list {
+  display: flex;
+  margin-left: 76px;
 }
-.heder-item {
+.heder-item:not(:first-child) {
+  margin-left: 40px;
 }
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   color: var(--primary-text-bg-color);
 }
 
 .header-contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact-item:not(:first-child) {
+  margin-left: 40px;
 }
 
 .header-tel,
 .header-mail {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 400;
   color: var(--description-tel-mail-color);
 }
+
 .header-contact .link:hover,
 .header-contact .link:focus,
 .header-link.link:hover,
@@ -121,15 +146,16 @@ body {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 
   background-color: var(--primary-text-bg-color);
 }
 
 .hero-title {
+  /* width: 494px; */
   margin-top: 0;
   margin-bottom: 48px;
 
-  text-align: center;
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -159,11 +185,17 @@ body {
 /* --------------ABOUT-------------- */
 
 .about {
+  padding-bottom: 0;
 }
 .about-list {
+  display: flex;
 }
 .about-item {
   width: 264px;
+}
+.about-item:nth-child(-n + 3) {
+  margin-right: 24px;
+  /* ???? */
 }
 .about-title {
   margin-bottom: 8px;
@@ -173,8 +205,6 @@ body {
   letter-spacing: 0.02em;
 }
 .about-description {
-  /* margin-bottom: 0; */
-
   font-weight: 400;
   color: var(--description-tel-mail-color);
 }
@@ -182,6 +212,7 @@ body {
 /* --------------WORKING-------------- */
 
 .working {
+  text-align: center;
 }
 .working-title {
   margin-bottom: 72px;
@@ -190,6 +221,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.working-list {
+  display: flex;
 }
 .working-list .container {
   background: linear-gradient(
@@ -204,7 +238,9 @@ body {
   height: 300px;
 }
 
-.working-item {
+.working-item:nth-child(-n + 2) {
+  margin-right: 24px;
+  /* ???? */
 }
 
 /* --------------TEAM-------------- */
@@ -224,6 +260,7 @@ body {
   color: var(--primary-text-bg-color);
 }
 .team-list {
+  display: flex;
 }
 
 .team-item {
@@ -237,6 +274,10 @@ body {
 }
 .team-item img {
   margin-bottom: 32px;
+}
+.team-item:nth-child(-n + 3) {
+  margin-right: 24px;
+  /* ???? */
 }
 
 .team-subtitle {
@@ -263,7 +304,8 @@ body {
   background-color: var(--primary-text-bg-color);
 }
 .footer .container {
-  width: 264px;
+  width: 300px;
+  margin-left: 156px;
 }
 
 .footer-logo .one {
@@ -305,11 +347,16 @@ body {
   padding-top: 96px;
 }
 .btn-list {
+  display: flex;
+  justify-content: center;
+}
+.btn-list .btn-item + .btn-item {
+  margin-left: 24px;
 }
 .btn-item {
+  margin-bottom: 72px;
 }
 .btn {
-  margin-bottom: 72px;
   padding: 12px 24px;
 
   background: var(--bg-btn-foot-color);
@@ -334,12 +381,25 @@ body {
   color: var(--title-text-bg-color);
 }
 .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-item {
+  /* width: calc((100%-48px)/3); */
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.benefits-item:nth-child(3n) {
+  margin-right: 0;
+}
+.benefits-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
-.benefits-item .text{
+.benefits-item .text {
   width: 360px;
-  padding: 32px 32px;
-  border-left: 1px solid var(--primary-border-color) ;
+  padding: 32px 0;
+  border-left: 1px solid var(--primary-border-color);
   border-right: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
 }
@@ -354,7 +414,6 @@ body {
   letter-spacing: 0.02em;
 }
 .benefits-description {
-  /* padding-bottom: 32px; */
   padding-left: 16px;
 
   font-weight: 400;
