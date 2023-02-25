@@ -296,7 +296,7 @@ body {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   /* якщо добавиться контент */
   gap: 24px;
 }
@@ -315,7 +315,7 @@ body {
   margin-right: 24px;
 } */
 
-.team-content{
+.team-content {
   text-align: center;
   padding: 32px 0;
 }
@@ -341,17 +341,7 @@ body {
 
   background-color: var(--primary-text-bg-color);
 }
-
-.footer-logo .one {
-  font-family: var(--secondaty-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
+.footer-logo .one,
 .footer-logo .two {
   font-family: var(--secondaty-font);
   font-weight: 800;
@@ -359,6 +349,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-logo .one {
+  color: var(--accent-color);
+}
+
+.footer-logo .two {
   color: var(--bg-btn-foot-color);
 }
 
