@@ -1,6 +1,7 @@
 :root {
   --primary-text-bg-color: #2e2f42;
-  --title-text-bg-color: #ffffff;
+  --hero-title-text-color: #ffffff;
+  --primary-bg-color: #ffffff;
   --description-tel-mail-color: #434455;
   --primary-border-color: #e7e9fc;
   --bg-btn-foot-color: #f4f4fd;
@@ -25,16 +26,18 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
-  background-color: var(--title-text-bg-color);
+  background-color: var(--primary-bg-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--primary-text-bg-color);
 }
 
 .visually-hidden {
@@ -155,25 +158,19 @@ body {
 
 .hero .container {
   display: flex;
-  justify-content: center;
-}
-
-.hero-content {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-
-  max-width: 496px;
 }
 
 .hero-title {
-  margin: 0 0 48px;
+  margin-bottom: 48px;
+  max-width: 496px;
+  text-align: center;
 
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--title-text-bg-color);
+  color: var(--hero-title-text-color);
 }
 
 .hero-btn {
@@ -187,7 +184,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--title-text-bg-color);
+  color: var(--hero-title-text-color);
   cursor: pointer;
 }
 
@@ -221,6 +218,7 @@ body {
   font-size: 20px;
   line-height: 0.83;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .about-description {
@@ -241,6 +239,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  font-weight: 500;
 }
 
 .working-list {
@@ -280,6 +279,7 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+  font-weight: 500;
   text-transform: capitalize;
   color: var(--primary-text-bg-color);
 }
@@ -295,7 +295,7 @@ body {
   width: calc((100%-72px) / 4);
   max-width: 264px;
 
-  background: var(--title-text-bg-color);
+  background: var(--primary-bg-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -330,6 +330,12 @@ body {
 
   background-color: var(--primary-text-bg-color);
 }
+
+.footer-logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .footer-logo .one,
 .footer-logo .two {
   font-family: var(--secondaty-font);
@@ -354,7 +360,6 @@ body {
 
 .footer-description {
   max-width: 264px;
-  margin: 16px 0 0;
 
   color: var(--primary-border-color);
 }
@@ -371,15 +376,13 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  margin-bottom: 72px;
 }
 
 /* .btn-list .btn-item + .btn-item {
   margin-left: 24px;
 } */
-
-.btn-item {
-  margin-bottom: 72px;
-}
 
 .btn {
   padding: 12px 24px;
@@ -403,19 +406,20 @@ body {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color-2);
-  border: 1px solid var(--accent-color-2);
-  color: var(--title-text-bg-color);
+  border-color: var(--accent-color-2);
+
+  color: var(--hero-title-text-color);
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px;
+  column-gap: 24px;
 }
 
 .benefits-item {
   width: calc((100%-48px) / 3);
-  margin-bottom: 48px;
   max-width: 360px;
 }
 
@@ -428,10 +432,9 @@ body {
 }
 
 .benefits-item .text {
-  padding: 32px 0 32px 16px;
-  border-left: 1px solid var(--primary-border-color);
-  border-right: 1px solid var(--primary-border-color);
-  border-bottom: 1px solid var(--primary-border-color);
+  padding: 32px 16px;
+  border: 1px solid var(--primary-border-color);
+  border-top: none;
 }
 
 .benefits-subtitle {
