@@ -367,7 +367,7 @@ body {
 }
 
 .footer-description {
-  width: 264px;
+  max-width: 264px;
   margin-top: 16px;
   margin-bottom: 0;
 
