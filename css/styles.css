@@ -416,6 +416,7 @@ body {
   flex-wrap: wrap;
   gap: 48px;
   column-gap: 24px;
+  /* gap: 48px 24px; */
 }
 
 .benefits-item {
